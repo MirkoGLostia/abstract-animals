@@ -8,25 +8,23 @@ public class MainBonusElec {
 
         // variables
         String name;
+        int deviceType;
         boolean exit = false;
 
         // chiediamo nome dispositivo
         System.out.println("gimme name of device");
         name = userInput.nextLine();
-        Functionality device = null;
 
         // creiamo il dispositivo
         do {
         System.out.println("what device is it? 1-playstation 2-DVDreader");
-        int choice = Integer.parseInt(userInput.nextLine());
-        if (choice == 1) {
-            device = Creator.create("playstation", name);
-            exit = true;
-        } else if (choice == 2) {
-            device = Creator.create("DVDreader", name);
+        deviceType = Integer.parseInt(userInput.nextLine());
+        if (deviceType > 0 && deviceType < 3) {
             exit = true;
         }
         } while (!exit);
+
+        Functionality device = Creator.create(deviceType, name);
 
         device.play();
         device.stop();

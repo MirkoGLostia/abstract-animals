@@ -2,13 +2,11 @@ package org.lessons.java.bonus.electronics;
 
 public class Creator {
 
-    public static Functionality create(String arg, String name){
-        if (arg.equals("playstation")){
-            return new Playstation(name);
-        }else if (arg.equals("DVDreader")){
-            return new DVDReader(name);
-        }else {
-            return null;
-        }
+    public static Functionality create(int arg, String name){
+        return switch (arg) {
+            case 1 -> new Playstation(name);
+            case 2 -> new DVDReader(name);
+            default -> null;
+        };
     }
 }
