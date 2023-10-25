@@ -9,7 +9,7 @@ import org.lessons.java.farm.animals.species.Eagle;
 import org.lessons.java.farm.animals.species.Sparrow;
 import org.lessons.java.farm.methods.UsefulMethods;
 
-public class Main {
+public class MainFarm {
     public static void main(String[] args) {
         // the animals
         Eagle terry = new Eagle("Terry");
