@@ -3,15 +3,13 @@ package org.lessons.java.farm;
 public abstract class Animal {
     // attributes
     protected String name;
-    protected String food;
 
 
 
 
     // constructor
-    public Animal(String name, String food) {
+    public Animal(String name) {
         this.name = name;
-        this.food = food;
     }
 
 
@@ -27,13 +25,6 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public String getFood() {
-        return food;
-    }
-
-    public void setFood(String food) {
-        this.food = food;
-    }
 
 
 
@@ -43,9 +34,7 @@ public abstract class Animal {
         System.out.println("Zzzzzzzzzzzz");
     }
 
-    public void eating(){
-        System.out.println("I'm eating " + this.food);
-    }
+    public abstract void eating();
 
     public abstract void animalSound();
 

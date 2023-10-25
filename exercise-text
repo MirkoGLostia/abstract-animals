@@ -22,7 +22,7 @@ Questi metodi prendono come parametro un animale che può o volare / nuotare e r
 Scrivere un programma che istanzi animali che volano o nuotano e richiamare i metodi faiVolare / faiNuotare passandoglieli come parametro.
 Buon lavoro!
 
-@here BONUS: da inserire in un differente package della stessa repo dell’esercizio base :point_up_2: anche se è un esercizio differente
+@here BONUS: da inserire in un differente package della stessa repo dell’esercizio base anche se è un esercizio differente
 Vogliamo realizzare una classe che si occupi di istanziare un oggetto che può essere un lettore dvd o playstation.
 Questa classe la chiameremo “Creator”. Esporrà un metodo (che chiameremo create) che preso in input il tipo di dispositivo da restituire (“lettore dvd”o “playstation”) dia in output una nuova istanza di quel dispositivo.
 Entrambi i dispositivi avranno due metodi
