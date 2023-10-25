@@ -17,6 +17,19 @@ public class Main {
             animal.sleeping();
             animal.animalSound();
             animal.eating();
+            if (animal instanceof CanFly flying) {
+                makeItFly(flying);
+            } else if (animal instanceof  CanSwim swimmer) {
+                makeItSwim(swimmer);
+            }
         }
+    }
+
+    private static void makeItFly (CanFly arg) {
+        arg.fly();
+    }
+
+    private static void makeItSwim (CanSwim arg) {
+        arg.swim();
     }
 }
