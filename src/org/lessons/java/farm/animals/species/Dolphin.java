@@ -1,6 +1,9 @@
-package org.lessons.java.farm;
+package org.lessons.java.farm.animals.species;
 
-public class Dolphin extends Animal implements CanSwim{
+import org.lessons.java.farm.animals.charateristics.CanSwim;
+import org.lessons.java.farm.animals.Animal;
+
+public class Dolphin extends Animal implements CanSwim {
     public Dolphin(String name) {
         super(name);
     }

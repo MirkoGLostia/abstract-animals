@@ -1,4 +1,4 @@
-package org.lessons.java.farm;
+package org.lessons.java.farm.animals;
 
 public abstract class Animal {
     // attributes

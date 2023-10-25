@@ -1,6 +1,9 @@
-package org.lessons.java.farm;
+package org.lessons.java.farm.animals.species;
 
-public class Sparrow extends Animal implements CanFly{
+import org.lessons.java.farm.animals.charateristics.CanFly;
+import org.lessons.java.farm.animals.Animal;
+
+public class Sparrow extends Animal implements CanFly {
     public Sparrow(String name) {
         super(name);
     }

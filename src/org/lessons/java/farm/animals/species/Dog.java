@@ -1,6 +1,8 @@
-package org.lessons.java.farm;
+package org.lessons.java.farm.animals.species;
 
-public class Dog extends Animal{
+import org.lessons.java.farm.animals.Animal;
+
+public class Dog extends Animal {
     public Dog(String name) {
         super(name);
     }
